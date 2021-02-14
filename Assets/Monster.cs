@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum monType { NULL, UNDEAD, FEY, DEMON, ELDRITCH, BEAST, AQUATIC, CONSTRUCT, DRAKE, AVIAN, ABBERATION, HUMANOID, MATERIAL, ETHEREAL, CELESTIAL, FLORAL }
+public enum monType { NONE, BEAST, HUMANOID, AVIAN, UNDEAD, MATERIAL, ETHEREAL, CONSTRUCT, DEMON, AQUATIC, FLORAL, CELESTIAL, ELDRITCH, DRACONIC, ABBERATION, FEY }
 public enum monStatus { NORMAL, DEAD, POISONED, ASLEEP, BLIND, PARALYSED }
 
 public enum lvlSpd { VSLOW, SLOW, FAST, VFAST }
+[CreateAssetMenu(fileName = "New Monster", menuName = "Monster/Make new monster")]
 public class Monster : ScriptableObject
 {
     public int monID;
@@ -105,4 +106,28 @@ public class Monster : ScriptableObject
         this.AGL += (int)Mathf.Clamp((this.baseAGL / 50), 1, (this.baseAGL / 50));
 
     }
+}
+
+public class TypeMatch
+{
+    static float[][] typeChart =
+    {                       /*NON BST HMN AVN UND MTR ETH CON DMN AQU FLR CEL ELD DRA ABR FEY*/
+        /*NON*/ new float[] {1f,  1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f },
+        /*BST*/ new float[] {1f,  1f, 1f, 1f, 1f,0.5f,0f, 0.5f,1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f },
+        /*HMN*/ new float[] {1f,  2f, 1f,0.5f,0.5f,2f, 0f, 2f, 1f, 1f, 1f, 1f,0.5f, 1f, 1f,0.5f },
+        /*AVN*/ new float[] {1f,  1f, 2f, 1f, 1f,0.5f, 1f, 1f, 1f, 2f, 2f,0.5f, 1f, 1f, 1f, 1f },
+        /*UND*/ new float[] {1f,  1f, 1f, 1f,0.5f,0.5f, 1f,0.5f, 1f, 0.5f,0.5f,1f,1f,1f,2f,2f },
+        /*MTR*/ new float[] {1f,  1f, 1f, 2f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 2f,0.5f,0.5f, 1f },
+        /*ETH*/ new float[] {1f,  0f, 1f, 1f, 2f, 1f, 2f,0.5f,0.5f, 1f, 1f, 1f, 1f, 1f, 1f, 1f },
+        /*CON*/ new float[] {1f,  1f, 1f, 1f, 1f, 2f, 1f, 0.5f, 1f,0.5f,2f, 1f, 1f, 1f, 1f, 2f },
+        /*DMN*/ new float[] {1f,  1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f },
+        /*AQU*/ new float[] {1f,  1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f },
+        /*FLR*/ new float[] {1f,  1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f },
+        /*CEL*/ new float[] {1f,  1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f },
+        /*ELD*/ new float[] {1f,  1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f },
+        /*DRA*/ new float[] {1f,  1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f },
+        /*ABR*/ new float[] {1f,  1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f },
+        /*FEY*/ new float[] {1f,  1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f }
+
+    };
 }
