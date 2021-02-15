@@ -120,14 +120,14 @@ public class TypeMatch
         /*MTR*/ new float[] {1f,  1f, 1f, 2f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 2f,0.5f,0.5f, 1f },
         /*ETH*/ new float[] {1f,  0f, 1f, 1f, 2f, 1f, 2f,0.5f,0.5f, 1f, 1f, 1f, 1f, 1f, 1f, 1f },
         /*CON*/ new float[] {1f,  1f, 1f, 1f, 1f, 2f, 1f, 0.5f, 1f,0.5f,2f, 1f, 1f, 1f, 1f, 2f },
-        /*DMN*/ new float[] {1f,  1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f },
-        /*AQU*/ new float[] {1f,  1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f },
-        /*FLR*/ new float[] {1f,  1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f },
-        /*CEL*/ new float[] {1f,  1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f },
-        /*ELD*/ new float[] {1f,  1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f },
-        /*DRA*/ new float[] {1f,  1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f },
-        /*ABR*/ new float[] {1f,  1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f },
-        /*FEY*/ new float[] {1f,  1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f }
+        /*DMN*/ new float[] {1f,  1f, 1f, 1f, 0.5f, 1f,2f,2f, 1f, 1f, 1f, 0.5f, 2f, 1f, 1f,0.5f },
+        /*AQU*/ new float[] {1f,  1f, 1f,0.5f, 1f, 2f, 1f, 1f,2f, 1f, 0.5f, 1f, 1f, 1f, 2f, 1f },
+        /*FLR*/ new float[] {1f,  1f, 1f, 1f, 1f, 2f, 1f, 0.5f, 1f,2f,0.5f, 1f, 1f,0.5f, 1f, 1f },
+        /*CEL*/ new float[] {1f,  1f, 1f, 1f, 2f, 1f,0.5f,0.5f,2f, 1f, 1f, 1f, 0.5f, 1f, 1f, 1f },
+        /*ELD*/ new float[] {1f,  2f, 1f, 2f, 1f, 1f, 1f, 0.5f,0f, 1f, 1f, 2f, 0.5f, 1f, 1f, 1f },
+        /*DRA*/ new float[] {1f,  1f, 1f, 1f, 1f, 1f, 1f, 0.5f, 1f, 1f, 1f, 1f, 1f, 2f, 1f, 0f },
+        /*ABR*/ new float[] {1f,  1f,0.5f,0.5f, 2f, 1f,0.5f, 1f, 1f, 1f, 2f, 1f, 2f, 1f,0.5f,1f },
+        /*FEY*/ new float[] {1f,  2f, 1f,0.5f, 1f, 1f,0.5f,0.5f, 1f, 1f, 1f, 1f, 1f, 2f, 2f, 1f }
 
     };
 }
