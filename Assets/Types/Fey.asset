@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 575f5d7f9f348d040990ff8228e97662, type: 3}
+  m_Name: Fey
+  m_EditorClassIdentifier: 
+  typeName: Fey
+  strongAgainst:
+  - {fileID: 11400000, guid: 9891186ace3beb543b17b00d8d547667, type: 2}
+  - {fileID: 11400000, guid: 8aa5b89314508ba4c832fad8caa0e265, type: 2}
+  - {fileID: 11400000, guid: 63055e56dc31a8c4a940dc51f442d899, type: 2}
+  weakAgainst:
+  - {fileID: 11400000, guid: a8c5b4a69cb82f64b861c8f6b7f58534, type: 2}
+  - {fileID: 11400000, guid: 86e18014429d26b488912ffc80e588a5, type: 2}
+  - {fileID: 11400000, guid: db8a95dc83676f144a2447be86f46552, type: 2}
+  noEffect: []

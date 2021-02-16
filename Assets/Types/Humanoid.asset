@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 575f5d7f9f348d040990ff8228e97662, type: 3}
+  m_Name: Humanoid
+  m_EditorClassIdentifier: 
+  typeName: Humanoid
+  strongAgainst:
+  - {fileID: 11400000, guid: 42e63a883a3c6c84dbc36e6aca4c6948, type: 2}
+  - {fileID: 11400000, guid: 4f450548c4ae32b458695c61b6e009ba, type: 2}
+  - {fileID: 11400000, guid: 86e18014429d26b488912ffc80e588a5, type: 2}
+  weakAgainst:
+  - {fileID: 11400000, guid: d3ef4348215115c4b844d673885ca1f2, type: 2}
+  - {fileID: 11400000, guid: a8c5b4a69cb82f64b861c8f6b7f58534, type: 2}
+  - {fileID: 11400000, guid: dc82f0662ae64354a8549208f7792cbd, type: 2}
+  - {fileID: 11400000, guid: ddb868d62cccc7246ae77b86c50737f7, type: 2}
+  noEffect:
+  - {fileID: 11400000, guid: 6f9409e2c060b1745a3c399cfdb5f296, type: 2}

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum monType { NONE, BEAST, HUMANOID, AVIAN, UNDEAD, MATERIAL, ETHEREAL, CONSTRUCT, DEMON, AQUATIC, FLORAL, CELESTIAL, ELDRITCH, DRACONIC, ABBERATION, FEY }
+//public enum monType { NONE, BEAST, HUMANOID, AVIAN, UNDEAD, MATERIAL, ETHEREAL, CONSTRUCT, DEMON, AQUATIC, FLORAL, CELESTIAL, ELDRITCH, DRACONIC, ABBERATION, FEY }
 public enum monStatus { NORMAL, DEAD, POISONED, ASLEEP, BLIND, PARALYSED }
 
 public enum lvlSpd { VSLOW, SLOW, FAST, VFAST }
@@ -15,8 +15,8 @@ public class Monster : ScriptableObject
     public int xp;
     public int LVL;
     public lvlSpd lvlRate;
-    public monType type1;
-    public monType type2;
+    public MonType type1;
+    public MonType type2;
     public monStatus curStatus;
     public int curHP;
     public int maxHP;
