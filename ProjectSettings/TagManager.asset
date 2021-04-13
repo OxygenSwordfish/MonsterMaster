@@ -48,3 +48,6 @@ TagManager:
   - name: text
     uniqueID: 2307947155
     locked: 0
+  - name: textbox text
+    uniqueID: 681196645
+    locked: 0
