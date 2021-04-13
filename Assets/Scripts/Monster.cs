@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum monType { NONE, BEAST, HUMANOID, AVIAN, UNDEAD, MATERIAL, ETHEREAL, CONSTRUCT, DEMON, AQUATIC, FLORAL, CELESTIAL, ELDRITCH, DRACONIC, ABBERATION, FEY }
 public enum monStatus { NORMAL, DEAD, POISONED, ASLEEP, BLIND, PARALYSED }
@@ -57,6 +58,167 @@ public class Monster : ScriptableObject
     void Update()
     {
         
+    }
+
+    public string DisplayMonsterName()
+    {
+        Debug.Log(monName);
+        return monName;
+    }
+
+    public int getMonsterID()
+    {
+        Debug.Log(monID);
+        return monID;
+    }
+
+    public int getMonsterSex()
+    {
+        Debug.Log(monSex);
+        return monSex;
+    }
+
+    public int getXP()
+    {
+        Debug.Log(xp);
+        return xp;
+    }
+
+    public int getLevel()
+    {
+        Debug.Log(LVL);
+        return LVL;
+    }
+
+    public lvlSpd getLevelRate()
+    {
+        Debug.Log(lvlRate);
+        return lvlRate;
+    }
+
+    public monType getMonsterType()
+    {
+        Debug.Log(type1);
+        return type1;
+    }
+
+    public monType getMonsterSecondaryType()
+    {
+        Debug.Log(type2);
+        return type2;
+    }
+
+    public monStatus getMonsterCurrentStatus()
+    {
+        Debug.Log(curStatus);
+        return curStatus;
+    }
+
+    public int getCurrentHP()
+    {
+        Debug.Log(curHP);
+        return curHP;
+    }
+
+    public int getMaxHP()
+    {
+        Debug.Log(maxHP);
+        return maxHP;
+    }
+
+    public int getBaseATK()
+    {
+        Debug.Log(baseATK);
+        return baseATK;
+    }
+
+    public int getBaseDEF()
+    {
+        Debug.Log(baseDEF);
+        return baseDEF;
+    }
+
+    public int getBaseMAT()
+    {
+        Debug.Log(baseMAT);
+        return baseMAT;
+    }
+
+    public int getBaseMDF()
+    {
+        Debug.Log(baseMDF);
+        return baseMDF;
+    }
+
+    public int getBaseAGL()
+    {
+        Debug.Log(baseAGL);
+        return baseAGL;
+    }
+
+    public int getATK()
+    {
+        Debug.Log(ATK);
+        return ATK;
+    }
+
+    public int getDEF()
+    {
+        Debug.Log(DEF);
+        return DEF;
+    }
+
+    public int getMAT()
+    {
+        Debug.Log(MAT);
+        return MAT;
+    }
+
+    public int getMDF()
+    {
+        Debug.Log(MDF);
+        return MDF;
+    }
+
+    public int getAGL()
+    {
+        Debug.Log(AGL);
+        return AGL;
+    }
+
+    public int getMoveOne()
+    {
+        Debug.Log(move1);
+        return move1;
+    }
+
+    public int getMoveTwo()
+    {
+        Debug.Log(move2);
+        return move2;
+    }
+
+    public int getMoveThree()
+    {
+        Debug.Log(move3);
+        return move3;
+    }
+
+    public int getMoveFour()
+    {
+        Debug.Log(move4);
+        return move4;
+    }
+
+    public int getHeldItem()
+    {
+        Debug.Log(itemHeld);
+        return itemHeld;
+    }
+
+    public Sprite getFrontSprite()
+    {
+        return bFront;
     }
 
     void GainXP(int gainedXP)

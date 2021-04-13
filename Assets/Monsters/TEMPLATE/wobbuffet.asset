@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69e74e56cafaf1a40bd42fd203433018, type: 3}
+  m_Name: wobbuffet
+  m_EditorClassIdentifier: 
+  monID: 1
+  monName: Wobbuffet
+  monSex: 0
+  xp: 0
+  LVL: 5
+  lvlRate: 0
+  type1: 11
+  type2: 2
+  curStatus: 0
+  curHP: 100
+  maxHP: 100
+  baseHP: 64
+  ATK: 20
+  baseATK: 20
+  DEF: 20
+  baseDEF: 20
+  MAT: 20
+  baseMAT: 20
+  MDF: 20
+  baseMDF: 20
+  AGL: 20
+  baseAGL: 20
+  move1: 20
+  mEn1: 20
+  move2: 20
+  mEn2: 20
+  move3: 20
+  mEn3: 20
+  move4: 20
+  mEn4: 2
+  itemHeld: 0
+  status: 0
+  icon: {fileID: 21300000, guid: b4fe164aeed68db4892af78859dc47a2, type: 3}
+  bFront: {fileID: 21300000, guid: 8b5b55e072ef75b43ab37fe4ef09e12f, type: 3}
+  bBack: {fileID: 0}
