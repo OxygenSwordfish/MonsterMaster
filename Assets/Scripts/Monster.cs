@@ -60,7 +60,7 @@ public class Monster : ScriptableObject
         
     }
 
-    public string DisplayMonsterName()
+    public string getMonsterName()
     {
         Debug.Log(monName);
         return monName;
@@ -84,7 +84,7 @@ public class Monster : ScriptableObject
         return xp;
     }
 
-    public int getLevel()
+    public int getMonsterLevel()
     {
         Debug.Log(LVL);
         return LVL;
@@ -219,6 +219,11 @@ public class Monster : ScriptableObject
     public Sprite getFrontSprite()
     {
         return bFront;
+    }
+
+    public Sprite getBackSprite()
+    {
+        return bBack;
     }
 
     void GainXP(int gainedXP)

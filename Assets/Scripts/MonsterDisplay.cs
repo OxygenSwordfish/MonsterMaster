@@ -6,34 +6,17 @@ using UnityEngine.UI;
 public class MonsterDisplay : MonoBehaviour
 {
     public Monster monster;
+    public Text monsterName;
+    public Text monsterLevel;
+    public GameObject go_;
     void Start()
     {
-        monster.DisplayMonsterName();
-        monster.getMonsterID();
-        monster.getMonsterSex();
-        monster.getXP();
-        monster.getLevel();
-        monster.getLevelRate();
-        monster.getMonsterType();
-        monster.getMonsterSecondaryType();
-        monster.getMonsterCurrentStatus();
-        monster.getCurrentHP();
-        monster.getATK();
-        monster.getDEF();
-        monster.getMAT();
-        monster.getMDF();
-        monster.getAGL();
-        monster.getBaseATK();
-        monster.getBaseDEF();
-        monster.getBaseMAT();
-        monster.getBaseMDF();
-        monster.getBaseAGL();
-        monster.getMoveOne();
-        monster.getMoveTwo();
-        monster.getMoveThree();
-        monster.getMoveFour();
-        monster.getHeldItem();
-        this.GetComponent<SpriteRenderer>().sprite = monster.getFrontSprite();
+        if(go_.tag == "player")
+            this.GetComponent<SpriteRenderer>().sprite = monster.getBackSprite();
+        else
+            this.GetComponent<SpriteRenderer>().sprite = monster.getFrontSprite();
+        monsterName.text = monster.getMonsterName();
+        monsterLevel.text = "Lv: " + monster.getMonsterLevel().ToString();
     }
 }
 
